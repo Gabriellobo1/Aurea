@@ -24,8 +24,8 @@ export  function Header() {
 
   const navItems = [
     { label: 'Home', href: 'home' },
-    { label: 'Sobre', href: 'sobre' },
     { label: 'Soluções Climáticas', href: 'solucoes' },
+    { label: 'Sobre', href: 'sobre' },
     { label: 'Contato', href: 'contato' }
   ];
 
@@ -40,7 +40,8 @@ export  function Header() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <a href="#home" className="flex items-center gap-3 group">
+          <Link to="/">
+          <a  className="flex items-center gap-3 group">
             <div className="relative">
               {/* Logo Icon */}
               <svg 
@@ -66,7 +67,7 @@ export  function Header() {
                 Studio
               </span>
             </div>
-          </a>
+          </a></Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-8">
