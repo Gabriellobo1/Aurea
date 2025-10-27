@@ -1,4 +1,5 @@
 import { Button } from '@/components/ui/button';
+import hero from '../../../public/Sala.png'
 
 export function Hero() {
   return (
@@ -46,7 +47,7 @@ export function Hero() {
             <div className="relative lg:h-[500px] h-[350px] rounded-2xl overflow-hidden shadow-2xl">
         
               <img 
-                src="/public/Sala.png" 
+                src={hero} 
                 alt="Sala de estar" 
                 className="w-full h-full object-cover"
               />

@@ -1,4 +1,9 @@
 import { Heart, Users, Award, Leaf } from 'lucide-react';
+import salaVerde from '../../../public/Salaverde.webp'
+
+import arquiteto1 from '../../../public/ArquitetoH.webp'
+import arquiteto2 from '../../../public/ArquitetoM.webp'
+import arquiteto3 from '../../../public/ArquitetoM2.webp'
 
 export function About() {
   return (
@@ -28,7 +33,7 @@ export function About() {
 
             {/* Image */}
             <div className="relative">
-                 <img src="/public/Salaverde.webp" alt="" className='cover rounded-lg'/>
+                 <img src={salaVerde} alt="" className='cover rounded-lg'/>
             </div>
           </div>
         </div>
@@ -125,9 +130,9 @@ export function About() {
 
           <div className="grid md:grid-cols-3 gap-8">
             {[
-              { name: 'Ana Paula Silva', role: 'Arquiteta Principal', specialty: 'Design Bioclimático' , img: '/public/ArquitetoH.webp'},
-              { name: 'Roberto Costa', role: 'Engenheiro Sustentável', specialty: 'Eficiência Energética', img: '/public/ArquitetoM.webp' },
-              { name: 'Mariana Santos', role: 'Designer de Interiores', specialty: 'Ambientes Naturais', img: '/public/ArquitetoM2.webp' }
+              { name: 'Ana Paula Silva', role: 'Arquiteta Principal', specialty: 'Design Bioclimático' , img: arquiteto1},
+              { name: 'Roberto Costa', role: 'Engenheiro Sustentável', specialty: 'Eficiência Energética', img: arquiteto2 },
+              { name: 'Mariana Santos', role: 'Designer de Interiores', specialty: 'Ambientes Naturais', img: arquiteto3 }
             ].map((member, index) => (
               <div key={index} className="bg-background rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-border">
                 <div className=''>
