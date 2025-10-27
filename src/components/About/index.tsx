@@ -1,9 +1,9 @@
 import { Heart, Users, Award, Leaf } from 'lucide-react';
 import salaVerde from '../../../public/Salaverde.webp'
 
-import arquiteto1 from '../../../public/ArquitetoH.webp'
-import arquiteto2 from '../../../public/ArquitetoM.webp'
-import arquiteto3 from '../../../public/ArquitetoM2.webp'
+import arquiteto1 from '../../../public/Bia.webp'
+import arquiteto2 from '../../../public/Gabriel.webp'
+import arquiteto3 from '../../../public/Gabriela.webp'
 
 export function About() {
   return (
