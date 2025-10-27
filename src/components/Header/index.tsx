@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export  function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -14,13 +15,18 @@ export  function Header() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+   const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   const navItems = [
-    { label: 'Home', href: '#home' },
-    { label: 'Sobre', href: '#sobre' },
-    { label: 'Soluções Climáticas', href: '#solucoes' },
-    { label: 'Portfólio', href: '#portfolio' },
-    { label: 'Blog', href: '#blog' },
-    { label: 'Contato', href: '#contato' }
+    { label: 'Home', href: 'home' },
+    { label: 'Sobre', href: 'sobre' },
+    { label: 'Soluções Climáticas', href: 'solucoes' },
+    { label: 'Contato', href: 'contato' }
   ];
 
   return (
@@ -67,7 +73,7 @@ export  function Header() {
             {navItems.map((item) => (
               <a
                 key={item.label}
-                href={item.href}
+                onClick={() => scrollToSection(item.href)}
                 className="text-primary-foreground hover:text-accent font-medium text-sm transition-colors relative group"
               >
                 {item.label}
@@ -78,11 +84,24 @@ export  function Header() {
 
           {/* CTA Button - Desktop */}
           <div className="hidden lg:block">
-            <Button 
-              className="bg-accent text-accent-foreground hover:bg-accent/90 font-semibold px-6"
-            >
-              Agendar Consultoria
-            </Button>
+           <div className='flex flex-row '>
+              <div className=" px-4">
+              <Button 
+                className="w-full bg-accent text-accent-foreground hover:bg-accent/90 font-semibold"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Agendar Consultoria
+              </Button>
+            </div>
+            <div className=" px-4">
+             <Link to="/Login">
+              <Button 
+                className="w-full bg-accent text-accent-foreground hover:bg-accent/90 font-semibold"
+              >
+                Login
+              </Button></Link>
+            </div>
+            </div>
           </div>
 
           {/* Mobile Menu Button */}
@@ -116,13 +135,24 @@ export  function Header() {
                 {item.label}
               </a>
             ))}
-            <div className="pt-4 px-4">
+            
+            <div>
+              <div className="pt-4 px-4">
               <Button 
                 className="w-full bg-accent text-accent-foreground hover:bg-accent/90 font-semibold"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Agendar Consultoria
               </Button>
+            </div>
+            <div className="pt-4 px-4">
+             <Link to="/Login">
+              <Button 
+                className="w-full bg-accent text-accent-foreground hover:bg-accent/90 font-semibold"
+              >
+                Login
+              </Button></Link>
+            </div>
             </div>
           </nav>
         </div>
