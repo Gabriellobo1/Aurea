@@ -130,7 +130,7 @@ export function About() {
 
           <div className="grid md:grid-cols-3 gap-8">
             {[
-              { name: 'Jõao Pedro Da Silva', role: 'Arquiteto Principal', specialty: 'Design Bioclimático' , img: arquiteto1},
+              { name: 'João Pedro Da Silva', role: 'Arquiteto Principal', specialty: 'Design Bioclimático' , img: arquiteto1},
               { name: 'Roberto Costa', role: 'Engenheiro Sustentável', specialty: 'Eficiência Energética', img: arquiteto2 },
               { name: 'Mariana Santos', role: 'Designer de Interiores', specialty: 'Ambientes Naturais', img: arquiteto3 }
             ].map((member, index) => (
