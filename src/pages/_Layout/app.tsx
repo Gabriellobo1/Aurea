@@ -8,7 +8,7 @@ export default function AppLayout() {
 			<div className=" z-50">
 				<Header />
 			</div>
-			<div className="flex flex-col w-full">
+			<div className="flex flex-col w-full px-7">
 				<Outlet />
 			</div>
 			<div className="flex flex-col w-full antialiased">
