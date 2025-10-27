@@ -135,8 +135,8 @@ export function About() {
               { name: 'Gabriela Eugênio', role: 'Designer de Interiores', specialty: 'Ambientes Naturais', img: arquiteto3 }
             ].map((member, index) => (
               <div key={index} className="bg-background rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-border">
-                <div className='h-80 flex items-center'>
-                    <img src={member.img} alt="" className='w-80 h-full cover' />
+                <div  className="h-80 w-full overflow-hidden rounded-t-2xl">
+                    <img src={member.img} alt="" className="w-full h-80 object-cover object-center"/>
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-primary mb-1">
