@@ -1,4 +1,4 @@
-import React from 'react';
+
 
 // Dados do footer
 const footerData = {

@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Wind, Sun, Thermometer, Leaf } from 'lucide-react';
 
 export function Solutions() {
