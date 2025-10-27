@@ -5,7 +5,7 @@ const footerData = {
   logo: {
     src: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='8' fill='%236C122C'/%3E%3Cpath d='M20 8L28 16H24V28H16V16H12L20 8Z' fill='%23EAD38C'/%3E%3C/svg%3E",
     alt: "Logo Arquitetura",
-    title: "ArchiDesign"
+    title: "Aurea Studio"
   },
   tagline: "Transformando espaços em experiências únicas",
   menuItems: [
@@ -40,12 +40,12 @@ const footerData = {
       title: "Contato",
       links: [
         { text: "(84) 3000-0000", url: "tel:+558430000000" },
-        { text: "contato@archidesign.com", url: "mailto:contato@archidesign.com" },
+        { text: "AureaStudio@gmail.com", url: "mailto:Aureacontato@gmail.com" },
         { text: "Natal, RN", url: "#localizacao" }
       ]
     }
   ],
-  copyright: "© 2025 ArchiDesign. Todos os direitos reservados.",
+  copyright: "© 2025 AureaStudio. Todos os direitos reservados.",
   bottomLinks: [
     { text: "Política de Privacidade", url: "#privacidade" },
     { text: "Termos de Uso", url: "#termos" },
